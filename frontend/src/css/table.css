@@ -1,0 +1,87 @@
+table {
+  width: 80%;
+  border-collapse: collapse;
+  margin: auto;
+  margin-bottom: 40px;
+}
+.table-del-btn {
+  border: 0;
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  background-color: #f05d0c;
+  color: white;
+}
+td,
+th {
+  border: 1px solid rgb(217, 217, 217);
+  text-align: center;
+  font-weight: 100;
+}
+
+.table-header {
+  margin: auto;
+  margin-top: 10px;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.table-header-button button {
+  margin-right: 20px;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+.table-table td:last-child {
+  border: 0;
+}
+.table-fill-btn {
+  background-color: gray;
+  color: black;
+}
+.btn-table {
+  border: 0;
+}
+.table-edit {
+  margin: auto;
+  width: 80%;
+}
+.table-edit input {
+  display: block;
+  width: 100%;
+}
+.table-edit button {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 5px 10px;
+  margin-right: 0;
+  float: right;
+}
+.table-show {
+  animation: table-fade 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.table-hidden {
+  animation: table-fade-out 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+@keyframes table-fade {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes table-fade-out {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+}

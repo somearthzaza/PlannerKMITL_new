@@ -1,0 +1,140 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "Send-Flowers";
+  src: url(../font/SendFlowers-Regular.ttf);
+}
+@font-face {
+  font-family: "Inter";
+  src: url(../font/inter.ttf);
+}
+nav {
+  background-color: #d9d9d9;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  display: inline-block;
+  height: 90px;
+}
+.row-nav {
+  transition: background-color 0.5s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 34px;
+  padding-right: 34px;
+}
+.book {
+  width: 55px;
+  height: 55px;
+}
+.nav_item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.nav_item:nth-child(2) {
+  column-gap: 85px;
+}
+.nav_item:nth-child(2) .navlink {
+  color: black;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  text-decoration: none;
+}
+.navlink {
+  transition: all 0.3s ease;
+}
+.user-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 20px;
+}
+.nav_item:nth-child(1) {
+  column-gap: 22px;
+}
+.nav_item:nth-child(1) .navlink {
+  color: black;
+  font-family: Send-Flowers;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 53px;
+  text-decoration: none;
+}
+.outer-circle {
+  content: " ";
+  background-color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+  border: 1px solid black;
+  position: relative;
+}
+
+.inner-circle {
+  z-index: 2;
+  content: " ";
+  background-color: white;
+  width: 25px;
+  height: 25px;
+  border-radius: 100px;
+  position: absolute;
+  border: 1px solid black;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.innter-circle-buttom {
+  content: " ";
+  z-index: 1;
+  width: 30px;
+  height: 13px;
+
+  position: absolute;
+  border: 1px solid black;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom: 0;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.user-menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 10px;
+}
+.user-menu p {
+  color: black;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  text-decoration: none;
+}
+.log-out {
+  background-color: none;
+  cursor: pointer;
+
+  color: black;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  text-decoration: none;
+}
